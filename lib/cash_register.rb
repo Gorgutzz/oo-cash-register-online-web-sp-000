@@ -11,7 +11,7 @@ class CashRegister
     @price = price
     quantity.times{@items << item}
     @total += price * quantity
-  end  
+  end
 
 
 
