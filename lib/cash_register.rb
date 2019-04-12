@@ -13,7 +13,10 @@ class CashRegister
     @total += price * quantity
   end
 
-
+  def apply_discount
+    if discount > 0
+      @amount_taken_off = (price * discount)/100
+      @total -= @amount_taken_off
 
 
 
